@@ -1,0 +1,70 @@
+name: Deploy Hugo site to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+        with:
+          submodules: false
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.134.3"
+          extended: true
+
+      - name: Build website
+        run: hugo --minify
+
+      - name: Verify English report
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          english = list(Path('content').rglob('_index.en.md'))
+          vietnamese = list(Path('content').rglob('_index.vi.md'))
+          assert len(english) == len(vietnamese) == 29, 'Missing translated pages'
+          for page in vietnamese:
+              assert page.with_name('_index.en.md').is_file(), f'Missing English page: {page}'
+          home = Path('public/en/index.html').read_text(encoding='utf-8')
+          assert 'Customize your own home page' not in home, 'English theme fallback rendered'
+          assert 'Student information' in home, 'English report content missing'
+          assert len(list(Path('public/en').rglob('index.html'))) >= 29, 'English sections missing'
+          print('Verified 29 translated report pages and rendered English homepage')
+          from html.parser import HTMLParser
+          class HeadingCounter(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.count = 0
+              def handle_starttag(self, tag, attrs):
+                  if tag == 'h1':
+                      self.count += 1
+          for language in ('', 'en'):
+              for section in ('1-worklog', '5-self-evaluation'):
+                  page = Path('public') / language / section / 'index.html'
+                  parser = HeadingCounter()
+                  parser.feed(page.read_text(encoding='utf-8'))
+                  assert parser.count == 1, f'{page}: expected one title, found {parser.count}'
+          print('Verified single headings in Worklog and Self-evaluation in both languages')
+          PY
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages # <- đảm bảo đúng tên nhánh bạn dùng để deploy
+          force_orphan: true # <- đảm bảo xóa lịch sử cũ ở nhánh gh-pages (giảm lỗi)
