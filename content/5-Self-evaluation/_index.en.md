@@ -10,7 +10,7 @@ pre: " <b> 5. </b> "
 
 **Student:** Lê Hoàng Tùng  
 **Class:** K68CNTTA  
-**Internship period:** 10 August–30 October 2026
+**Internship period:** 8 August – 14 November 2026
 
 During the twelve-week internship, I focused on AWS services and the role of each service within an application system. Topics progressed from accounts, costs and IAM permissions to VPC, EC2, S3, RDS, Cognito, monitoring, automation and deployment. Using Cloud Journey materials, I gradually organized my knowledge and related it to CloudDocs.
 

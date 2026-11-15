@@ -10,7 +10,7 @@ pre: " <b> 5. </b> "
 
 **Sinh viên:** Lê Hoàng Tùng  
 **Lớp:** K68CNTTA  
-**Thời gian thực tập:** 10/08/2026–30/10/2026
+**Thời gian thực tập:** 08/08/2026 – 14/11/2026
 
 Trong 12 tuần thực tập, em tập trung tìm hiểu các dịch vụ AWS và vai trò của từng dịch vụ trong một hệ thống ứng dụng. Nội dung học đi từ quản lý tài khoản, chi phí và phân quyền IAM đến VPC, EC2, S3, RDS, Cognito, giám sát, tự động hóa và triển khai. Thông qua tài liệu Cloud Journey, em từng bước hệ thống hóa kiến thức và liên hệ với CloudDocs.
 
