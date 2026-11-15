@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.7. </b> "
 ---
 
-**Period:** 21/09/2026–25/09/2026.
+**Period:** 21/09/2026 – 25/09/2026.
 
 This week moves from recognizing services to interacting with resources through command-line tools. I revisit IAM roles in the context of credentials and service access from a working environment or EC2.
 

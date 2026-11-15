@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
-**Thời gian:** 19/10/2026–23/10/2026.
+**Thời gian:** 19/10/2026 – 23/10/2026.
 
 Tuần này mở rộng từ một máy chủ sang kiến trúc có nhiều thành phần phục vụ. Em tìm hiểu cách phân phối lưu lượng, điều chỉnh số lượng máy chủ và giảm phụ thuộc vào một vị trí triển khai.
 

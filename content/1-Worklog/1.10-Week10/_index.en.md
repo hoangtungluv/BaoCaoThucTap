@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-**Period:** 12/10/2026–16/10/2026.
+**Period:** 12/10/2026 – 16/10/2026.
 
 This week covers two complementary areas: event-driven execution with Lambda and server management with Systems Manager. They are studied separately and do not constitute evidence of integration into CloudDocs.
 

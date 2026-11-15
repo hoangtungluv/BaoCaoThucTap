@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
-**Period:** 19/10/2026–23/10/2026.
+**Period:** 19/10/2026 – 23/10/2026.
 
 This week expands from one server to multiple serving components. I study traffic distribution, instance-count adjustment and reducing dependence on one deployment location.
 

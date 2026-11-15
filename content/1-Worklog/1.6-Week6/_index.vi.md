@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.6. </b> "
 ---
 
-**Thời gian:** 14/09/2026–18/09/2026.
+**Thời gian:** 14/09/2026 – 18/09/2026.
 
 Sau phần lưu tệp, em tìm hiểu cách lưu dữ liệu nghiệp vụ. Tuần này lấy RDS MySQL làm trọng tâm và dùng DynamoDB để so sánh cách mô hình hóa dữ liệu, truy vấn và lựa chọn cơ sở dữ liệu.
 

@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.4. </b> "
 ---
 
-**Period:** 31/08/2026–04/09/2026.
+**Period:** 31/08/2026 – 04/09/2026.
 
 Building on networking concepts, I study server options for running applications. EC2 is the main topic, with Lightsail used to compare resource organization and management complexity.
 

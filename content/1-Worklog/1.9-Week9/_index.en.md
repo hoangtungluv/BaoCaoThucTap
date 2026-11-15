@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-**Period:** 05/10/2026–09/10/2026.
+**Period:** 05/10/2026 – 09/10/2026.
 
 After studying application components, I consider how to recognize normal operation. CloudWatch is examined through metrics, logs, alarms and correlating failure signals.
 

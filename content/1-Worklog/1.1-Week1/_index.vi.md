@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-**Thời gian:** 10/08/2026–14/08/2026.
+**Thời gian:** 10/08/2026 – 14/08/2026.
 
 Tuần đầu tập trung tìm hiểu chương trình First Cloud AI Journey tại AWS Việt Nam và xây dựng định hướng học tập. Em bắt đầu từ các khái niệm điện toán đám mây trước khi đi vào từng dịch vụ.
 

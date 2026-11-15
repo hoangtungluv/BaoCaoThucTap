@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-**Thời gian:** 17/08/2026–21/08/2026.
+**Thời gian:** 17/08/2026 – 21/08/2026.
 
 Sau khi làm quen với tài khoản AWS, em chuyển sang câu hỏi ai được phép thực hiện thao tác nào trên tài nguyên. Tuần này tập trung vào các thành phần IAM và cách đọc quyền truy cập.
 

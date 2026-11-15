@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.7. </b> "
 ---
 
-**Thời gian:** 21/09/2026–25/09/2026.
+**Thời gian:** 21/09/2026 – 25/09/2026.
 
 Tuần này chuyển từ việc nhận biết dịch vụ sang cách tương tác với tài nguyên bằng dòng lệnh. Em quay lại IAM Role trong ngữ cảnh sử dụng thông tin xác thực và truy cập dịch vụ từ môi trường làm việc hoặc EC2.
 

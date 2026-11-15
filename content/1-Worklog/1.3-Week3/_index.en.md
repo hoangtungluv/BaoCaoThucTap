@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.3. </b> "
 ---
 
-**Period:** 24/08/2026–28/08/2026.
+**Period:** 24/08/2026 – 28/08/2026.
 
 This week examines traffic paths in AWS, from address spaces to access controls. The aim is to interpret a basic network diagram for an application with a server and a database.
 

@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-**Period:** 17/08/2026–21/08/2026.
+**Period:** 17/08/2026 – 21/08/2026.
 
 After reviewing AWS accounts, I focus on who can perform which actions on resources. This week covers IAM components and interpreting access permissions.
 

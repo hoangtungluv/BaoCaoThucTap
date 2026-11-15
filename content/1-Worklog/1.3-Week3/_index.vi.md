@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.3. </b> "
 ---
 
-**Thời gian:** 24/08/2026–28/08/2026.
+**Thời gian:** 24/08/2026 – 28/08/2026.
 
 Tuần này tìm hiểu đường đi của lưu lượng trong AWS, từ không gian địa chỉ mạng đến các lớp kiểm soát truy cập. Mục tiêu là đọc được sơ đồ mạng cơ bản cho một ứng dụng có máy chủ và cơ sở dữ liệu.
 

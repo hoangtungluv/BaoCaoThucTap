@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-**Thời gian:** 12/10/2026–16/10/2026.
+**Thời gian:** 12/10/2026 – 16/10/2026.
 
 Tuần này gồm hai hướng bổ sung: thực thi tác vụ theo sự kiện với Lambda và quản lý máy chủ với Systems Manager. Các nội dung được nghiên cứu riêng. Không xem đây là bằng chứng hai dịch vụ đã được tích hợp vào CloudDocs.
 

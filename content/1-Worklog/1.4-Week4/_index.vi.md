@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.4. </b> "
 ---
 
-**Thời gian:** 31/08/2026–04/09/2026.
+**Thời gian:** 31/08/2026 – 04/09/2026.
 
 Từ kiến thức mạng, em tìm hiểu lựa chọn máy chủ để chạy ứng dụng. EC2 là nội dung chính. Lightsail được dùng làm đối tượng so sánh về cách tổ chức tài nguyên và mức độ quản lý.
 

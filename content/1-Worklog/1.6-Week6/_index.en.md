@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.6. </b> "
 ---
 
-**Period:** 14/09/2026–18/09/2026.
+**Period:** 14/09/2026 – 18/09/2026.
 
 After file storage, I study business-data persistence. RDS MySQL is the focus, with DynamoDB used to compare data modeling, query patterns and database selection.
 

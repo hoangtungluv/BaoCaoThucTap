@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.8. </b> "
 ---
 
-**Period:** 28/09/2026–02/10/2026.
+**Period:** 28/09/2026 – 02/10/2026.
 
 This week focuses on application-user identity. I distinguish Cognito sign-in from document permissions enforced by the CloudDocs backend.
 

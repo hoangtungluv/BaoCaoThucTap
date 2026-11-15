@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.12. </b> "
 ---
 
-**Thời gian:** 26/10/2026–30/10/2026.
+**Thời gian:** 26/10/2026 – 30/10/2026.
 
 Tuần cuối tập trung hệ thống hóa kiến thức và rà soát cách trình bày báo cáo. Em liên hệ các dịch vụ đã học với CloudDocs, đồng thời tách rõ nội dung nghiên cứu, minh chứng hiện có và hướng phát triển.
 

@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-**Period:** 10/08/2026–14/08/2026.
+**Period:** 10/08/2026 – 14/08/2026.
 
 The first week focuses on the First Cloud AI Journey internship program at AWS Vietnam and establishing a learning direction. I begin with cloud computing concepts before studying individual services.
 

@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-**Period:** 07/09/2026–11/09/2026.
+**Period:** 07/09/2026 – 11/09/2026.
 
 This week focuses on file storage for a document management application. I study S3 and distinguish object, block and file storage before relating the concepts to CloudDocs.
 

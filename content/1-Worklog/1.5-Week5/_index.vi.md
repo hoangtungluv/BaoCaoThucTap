@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-**Thời gian:** 07/09/2026–11/09/2026.
+**Thời gian:** 07/09/2026 – 11/09/2026.
 
 Tuần này tập trung vào cách lưu tệp cho ứng dụng quản lý tài liệu. Em tìm hiểu S3 và phân biệt object storage với lưu trữ khối, lưu trữ tệp trước khi liên hệ với CloudDocs.
 

@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.12. </b> "
 ---
 
-**Period:** 26/10/2026–30/10/2026.
+**Period:** 26/10/2026 – 30/10/2026.
 
 The final week focuses on organizing knowledge and reviewing the report. I relate the studied services to CloudDocs while distinguishing research, available evidence and future development.
 

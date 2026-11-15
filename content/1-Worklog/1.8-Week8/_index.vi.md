@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.8. </b> "
 ---
 
-**Thời gian:** 28/09/2026–02/10/2026.
+**Thời gian:** 28/09/2026 – 02/10/2026.
 
 Tuần này tập trung vào danh tính người dùng của ứng dụng. Em phân biệt đăng nhập bằng Cognito với quyền thao tác tài liệu do backend CloudDocs kiểm soát.
 

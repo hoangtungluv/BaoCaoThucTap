@@ -7,7 +7,7 @@ chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-**Thời gian:** 05/10/2026–09/10/2026.
+**Thời gian:** 05/10/2026 – 09/10/2026.
 
 Sau khi tìm hiểu các thành phần ứng dụng, em chuyển sang câu hỏi làm thế nào nhận biết hệ thống đang hoạt động bình thường. CloudWatch được nghiên cứu qua metrics, logs, alarms và cách đối chiếu dấu hiệu sự cố.
 
