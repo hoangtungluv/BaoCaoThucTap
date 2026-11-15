@@ -24,7 +24,7 @@ Tuần cuối tập trung hệ thống hóa kiến thức và rà soát cách tr
 | --- | --- | --- | --- | --- |
 | Thứ Hai | Hệ thống hóa IAM, VPC, EC2, S3, RDS và Cognito. Mô tả vai trò từng dịch vụ trong sơ đồ CloudDocs. | 26/10/2026 | 26/10/2026 | [Khám phá các dịch vụ AWS](https://cloudjourney.awsfcaj.com/1-explore/) |
 | Thứ Ba | Đối chiếu luồng đăng nhập, kiểm tra quyền tài liệu, truyền tệp và lưu metadata. Phân biệt quyền IAM với quyền nghiệp vụ. | 27/10/2026 | 27/10/2026 | [Xác thực liên ứng dụng với Cognito](https://000141.awsfcaj.com/)<br>[Thực hành bảo mật Amazon S3](https://000069.awsfcaj.com/) |
-| Thứ Tư | Rà soát nội dung workshop và chú thích ảnh. Phân biệt kết quả có minh chứng với kịch bản kiểm thử hoặc kiến trúc đề xuất. | 28/10/2026 | 28/10/2026 | [Xây dựng ứng dụng web có tính sẵn sàng cao](https://000101.awsfcaj.com/)<br>[Thực hành bảo mật Amazon S3](https://000069.awsfcaj.com/) |
+| Thứ Tư | Rà soát nội dung workshop và chú thích ảnh. Phân biệt kết quả có minh chứng với kịch bản kiểm thử hoặc kiến trúc đề xuất. | 28/10/2026 | 28/10/2026 | [Kiến trúc WordPress với Auto Scaling, Load Balancer và RDS](https://000021.awsfcaj.com/1-introduce/)<br>[Thực hành bảo mật Amazon S3](https://000069.awsfcaj.com/) |
 | Thứ Năm | Biên tập nhật ký, bản đề xuất và tự đánh giá. Kiểm tra thuật ngữ, mốc thời gian, liên kết và nội dung Việt–Anh. | 29/10/2026 | 29/10/2026 | [Cloud Journey — Danh mục tài liệu](https://cloudjourney.awsfcaj.com/) |
 | Thứ Sáu | Tổng hợp điểm đã học, hạn chế và hướng phát triển. Rà soát thông tin nhạy cảm trước khi chuẩn bị bản báo cáo để nộp. | 30/10/2026 | 30/10/2026 | [Cloud Journey — Danh mục tài liệu](https://cloudjourney.awsfcaj.com/)<br>[Quản lý quyền truy cập với IAM](https://000002.awsfcaj.com/) |
 
@@ -44,5 +44,5 @@ Báo cáo cần thống nhất giữa nội dung mô tả và minh chứng. Nh�
 - [Khám phá các dịch vụ AWS](https://cloudjourney.awsfcaj.com/1-explore/)
 - [Xác thực liên ứng dụng với Cognito](https://000141.awsfcaj.com/)
 - [Thực hành bảo mật Amazon S3](https://000069.awsfcaj.com/)
-- [Xây dựng ứng dụng web có tính sẵn sàng cao](https://000101.awsfcaj.com/)
+- [Kiến trúc WordPress với Auto Scaling, Load Balancer và RDS](https://000021.awsfcaj.com/1-introduce/)
 - [Quản lý quyền truy cập với IAM](https://000002.awsfcaj.com/)

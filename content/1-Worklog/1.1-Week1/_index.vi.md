@@ -26,7 +26,7 @@ Tuần đầu tập trung tìm hiểu chương trình First Cloud AI Journey t�
 | Thứ Ba | Đọc về điện toán đám mây. Phân biệt IaaS, PaaS và SaaS bằng các ví dụ, so sánh với việc tự quản lý hạ tầng. | 11/08/2026 | 11/08/2026 | [Khám phá các dịch vụ AWS](https://cloudjourney.awsfcaj.com/1-explore/) |
 | Thứ Tư | Làm quen cách tổ chức AWS Management Console qua tài liệu. Tìm hiểu Region, Availability Zone và phạm vi tài nguyên của từng dịch vụ. | 12/08/2026 | 12/08/2026 | [Tổng quan Amazon EC2](https://000004.awsfcaj.com/1-introduce/)<br>[Amazon VPC và các thành phần mạng](https://000003.awsfcaj.com/1-introduce/) |
 | Thứ Năm | Tìm hiểu tài khoản root, MFA và mô hình trách nhiệm chung. Ghi lại những việc người sử dụng cần chịu trách nhiệm. | 13/08/2026 | 13/08/2026 | [Quản lý quyền truy cập với IAM](https://000002.awsfcaj.com/)<br>[Tạo tài khoản AWS đầu tiên](https://000001.awsfcaj.com/) |
-| Thứ Sáu | Đọc về AWS Billing và AWS Budgets. Tổng hợp nguyên tắc theo dõi chi phí và chuẩn bị nội dung học IAM. | 14/08/2026 | 14/08/2026 | [Quản lý chi phí với AWS Budgets](https://000007.awsfcaj.com/2-cost-budgets/) |
+| Thứ Sáu | Đọc về AWS Billing và AWS Budgets. Tổng hợp nguyên tắc theo dõi chi phí và chuẩn bị nội dung học IAM. | 14/08/2026 | 14/08/2026 | [AWS Budgets và cảnh báo chi phí](https://000001.awsfcaj.com/6-danh-s%C3%A1ch-s%C3%A1t-th%E1%BB%A7-credit-c%E1%BA%A7n-tr%C3%A1nh/) |
 
 </div>
 
@@ -50,4 +50,4 @@ Cảnh báo ngân sách không đồng nghĩa mọi tài nguyên sẽ tự dừn
 - [Tổng quan Amazon EC2](https://000004.awsfcaj.com/1-introduce/)
 - [Amazon VPC và các thành phần mạng](https://000003.awsfcaj.com/1-introduce/)
 - [Quản lý quyền truy cập với IAM](https://000002.awsfcaj.com/)
-- [Quản lý chi phí với AWS Budgets](https://000007.awsfcaj.com/2-cost-budgets/)
+- [AWS Budgets và cảnh báo chi phí](https://000001.awsfcaj.com/6-danh-s%C3%A1ch-s%C3%A1t-th%E1%BB%A7-credit-c%E1%BA%A7n-tr%C3%A1nh/)

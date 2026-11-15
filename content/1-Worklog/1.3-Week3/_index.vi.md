@@ -26,7 +26,7 @@ Tuần này tìm hiểu đường đi của lưu lượng trong AWS, từ không
 | Thứ Ba | Phân biệt public subnet và private subnet theo cấu hình định tuyến. Tìm hiểu quan hệ subnet với Availability Zone. | 25/08/2026 | 25/08/2026 | [Subnet trong VPC](https://000003.awsfcaj.com/1-introduce/1.1-subnets/) |
 | Thứ Tư | Tìm hiểu Route Table, Internet Gateway và NAT Gateway. Phân tích đường đi ra Internet của các nhóm tài nguyên. | 26/08/2026 | 26/08/2026 | [Route Table](https://000003.awsfcaj.com/1-introduce/1.2-routetable/)<br>[NAT Gateway](https://000003.awsfcaj.com/1-introduce/1.4-natgateway/) |
 | Thứ Năm | So sánh Security Group và Network ACL về phạm vi áp dụng, trạng thái kết nối và cách xử lý quy tắc. | 27/08/2026 | 27/08/2026 | [Security Group](https://000003.awsfcaj.com/2-firewallinvpc/2.1-securitygroup/)<br>[Network ACL](https://000003.awsfcaj.com/2-firewallinvpc/2.2-networkacls/) |
-| Thứ Sáu | Đọc sơ đồ bố trí máy chủ ứng dụng và cơ sở dữ liệu. Ghi lại những đường kết nối cần cho phép và những đường cần hạn chế. | 28/08/2026 | 28/08/2026 | [Amazon VPC và các thành phần mạng](https://000003.awsfcaj.com/1-introduce/)<br>[Làm quen Amazon RDS](https://000005.awsfcaj.com/) |
+| Thứ Sáu | Đọc sơ đồ bố trí máy chủ ứng dụng và cơ sở dữ liệu. Ghi lại những đường kết nối cần cho phép và những đường cần hạn chế. | 28/08/2026 | 28/08/2026 | [Amazon VPC và các thành phần mạng](https://000003.awsfcaj.com/1-introduce/)<br>[Chuẩn bị mạng và quyền truy cập RDS](https://000005.awsfcaj.com/2-prerequiste/) |
 
 </div>
 
@@ -51,4 +51,4 @@ Em hiểu rằng kết nối thành công phụ thuộc nhiều lớp: địa ch
 - [NAT Gateway](https://000003.awsfcaj.com/1-introduce/1.4-natgateway/)
 - [Security Group](https://000003.awsfcaj.com/2-firewallinvpc/2.1-securitygroup/)
 - [Network ACL](https://000003.awsfcaj.com/2-firewallinvpc/2.2-networkacls/)
-- [Làm quen Amazon RDS](https://000005.awsfcaj.com/)
+- [Chuẩn bị mạng và quyền truy cập RDS](https://000005.awsfcaj.com/2-prerequiste/)

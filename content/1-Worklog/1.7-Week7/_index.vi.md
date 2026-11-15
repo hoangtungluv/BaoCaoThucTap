@@ -23,8 +23,8 @@ Tuần này chuyển từ việc nhận biết dịch vụ sang cách tương t�
 | Thứ | Nội dung tìm hiểu và tổng hợp | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
 | Thứ Hai | Đọc cấu trúc lệnh AWS CLI và cách xem trợ giúp. Tìm hiểu ảnh hưởng của Region và định dạng đầu ra. | 21/09/2026 | 21/09/2026 | [Làm quen AWS CLI](https://000011.awsfcaj.com/) |
-| Thứ Ba | Tìm hiểu profile và nguồn thông tin xác thực. Phân tích lệnh aws sts get-caller-identity để nhận biết danh tính đang sử dụng. | 22/09/2026 | 22/09/2026 | [Làm quen AWS CLI](https://000011.awsfcaj.com/)<br>[AWS CLI với IAM](https://000011.awsfcaj.com/7-iam/) |
-| Thứ Tư | Tìm hiểu AWS CloudShell, môi trường dòng lệnh trên trình duyệt và phạm vi quyền kế thừa từ phiên đăng nhập. | 23/09/2026 | 23/09/2026 | [Cài đặt AWS CLI](https://000011.awsfcaj.com/3-installcli/)<br>[Làm quen AWS CLI](https://000011.awsfcaj.com/) |
+| Thứ Ba | Tìm hiểu profile và nguồn thông tin xác thực. Phân tích lệnh aws sts get-caller-identity để nhận biết danh tính đang sử dụng. | 22/09/2026 | 22/09/2026 | [Profile và thông tin xác thực AWS CLI](https://000011.awsfcaj.com/)<br>[Kiểm tra danh tính bằng AWS STS trong CloudShell](https://000037.awsfcaj.com/3-cloudformationbasic/3.1-launchawscloudshell/) |
+| Thứ Tư | Tìm hiểu AWS CloudShell, môi trường dòng lệnh trên trình duyệt và phạm vi quyền kế thừa từ phiên đăng nhập. | 23/09/2026 | 23/09/2026 | [Làm quen AWS CloudShell](https://000049.awsfcaj.com/) |
 | Thứ Năm | Đọc về IAM Role cho EC2 và instance profile. Đối chiếu cách ứng dụng lấy thông tin xác thực tạm thời thay vì ghi access key vào mã nguồn. | 24/09/2026 | 24/09/2026 | [IAM Role cho EC2](https://000048.awsfcaj.com/) |
 | Thứ Sáu | Phân tích các lệnh tra cứu tài nguyên và tình huống lỗi. Tổng hợp cách kiểm tra danh tính, Region và quyền trước khi thay đổi cấu hình. | 25/09/2026 | 25/09/2026 | [Xử lý lỗi AWS CLI](https://000011.awsfcaj.com/10-troubleshoot/)<br>[AWS CLI với IAM](https://000011.awsfcaj.com/7-iam/) |
 
@@ -46,7 +46,8 @@ CloudShell là môi trường thực thi lệnh, không phải cách vượt qua
 
 - [Cloud Journey — Danh mục tài liệu](https://cloudjourney.awsfcaj.com/)
 - [Làm quen AWS CLI](https://000011.awsfcaj.com/)
-- [AWS CLI với IAM](https://000011.awsfcaj.com/7-iam/)
-- [Cài đặt AWS CLI](https://000011.awsfcaj.com/3-installcli/)
+- [Kiểm tra danh tính bằng AWS STS trong CloudShell](https://000037.awsfcaj.com/3-cloudformationbasic/3.1-launchawscloudshell/)
+- [Làm quen AWS CloudShell](https://000049.awsfcaj.com/)
 - [IAM Role cho EC2](https://000048.awsfcaj.com/)
 - [Xử lý lỗi AWS CLI](https://000011.awsfcaj.com/10-troubleshoot/)
+- [AWS CLI với IAM](https://000011.awsfcaj.com/7-iam/)

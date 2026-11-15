@@ -22,11 +22,11 @@ Tuần này gồm hai hướng bổ sung: thực thi tác vụ theo sự kiện 
 
 | Thứ | Nội dung tìm hiểu và tổng hợp | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ Hai | Tìm hiểu Lambda function, runtime và trigger. So sánh xử lý tác vụ theo sự kiện với backend chạy thường trực trên EC2. | 12/10/2026 | 12/10/2026 | [Tự động hóa với AWS Lambda](https://000022.awsfcaj.com/) |
-| Thứ Ba | Đọc về execution role, timeout, memory và log. Xem xét một tác vụ xử lý sự kiện S3 ở mức ý tưởng mở rộng. | 13/10/2026 | 13/10/2026 | [Tự động hóa với AWS Lambda](https://000022.awsfcaj.com/) |
+| Thứ Hai | Tìm hiểu Lambda function, runtime và trigger. So sánh xử lý tác vụ theo sự kiện với backend chạy thường trực trên EC2. | 12/10/2026 | 12/10/2026 | [Tổng quan AWS Lambda](https://000022.awsfcaj.com/1-introduce/) |
+| Thứ Ba | Đọc về execution role, timeout, memory và log. Xem xét một tác vụ xử lý sự kiện S3 ở mức ý tưởng mở rộng. | 13/10/2026 | 13/10/2026 | [IAM Role cho Lambda](https://000022.awsfcaj.com/4-createroleforlambda/)<br>[Tạo Lambda function và cấu hình thực thi](https://000022.awsfcaj.com/5-createlambdafunction/5.1-createlambdafunction-stop/) |
 | Thứ Tư | Tìm hiểu Systems Manager và managed node. Đọc yêu cầu về SSM Agent, IAM Role và kết nối tới các endpoint dịch vụ. | 14/10/2026 | 14/10/2026 | [Quản lý hệ thống với Systems Manager](https://000031.awsfcaj.com/) |
 | Thứ Năm | So sánh Session Manager với SSH và tìm hiểu Run Command. Ghi lại yêu cầu kiểm soát quyền và phạm vi máy chủ bị tác động. | 15/10/2026 | 15/10/2026 | [Truy cập máy chủ qua Session Manager](https://000058.awsfcaj.com/)<br>[Quản lý hệ thống với Systems Manager](https://000031.awsfcaj.com/) |
-| Thứ Sáu | Đọc về Parameter Store, phân biệt cấu hình thông thường với dữ liệu nhạy cảm. Tổng hợp hướng ứng dụng vào vận hành CloudDocs. | 16/10/2026 | 16/10/2026 | [Quản lý hệ thống với Systems Manager](https://000031.awsfcaj.com/) |
+| Thứ Sáu | Đọc về Parameter Store, phân biệt cấu hình thông thường với dữ liệu nhạy cảm. Tổng hợp hướng ứng dụng vào vận hành CloudDocs. | 16/10/2026 | 16/10/2026 | [Sử dụng Parameter Store trong Custom Resource](https://000037.awsfcaj.com/4-cloudformationadvance/4.1-customresource/4.1.1-createlambdafunction/) |
 
 </div>
 
@@ -45,6 +45,9 @@ Không phải mọi chức năng backend đều phù hợp chuyển sang Lambda.
 ## Tài liệu tham khảo
 
 - [Cloud Journey — Danh mục tài liệu](https://cloudjourney.awsfcaj.com/)
-- [Tự động hóa với AWS Lambda](https://000022.awsfcaj.com/)
+- [Tổng quan AWS Lambda](https://000022.awsfcaj.com/1-introduce/)
+- [IAM Role cho Lambda](https://000022.awsfcaj.com/4-createroleforlambda/)
+- [Tạo Lambda function và cấu hình thực thi](https://000022.awsfcaj.com/5-createlambdafunction/5.1-createlambdafunction-stop/)
 - [Quản lý hệ thống với Systems Manager](https://000031.awsfcaj.com/)
 - [Truy cập máy chủ qua Session Manager](https://000058.awsfcaj.com/)
+- [Sử dụng Parameter Store trong Custom Resource](https://000037.awsfcaj.com/4-cloudformationadvance/4.1-customresource/4.1.1-createlambdafunction/)

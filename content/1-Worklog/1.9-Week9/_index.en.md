@@ -22,11 +22,11 @@ After studying application components, I consider how to recognize normal operat
 
 | Day | Study and review activity | Start date | Completion date | Study sources |
 | --- | --- | --- | --- | --- |
-| Monday | Study metrics, namespaces and dimensions. Review EC2 CPU and RDS database-connection examples. | 05/10/2026 | 05/10/2026 | [Monitoring with Amazon CloudWatch](https://000008.awsfcaj.com/) |
-| Tuesday | Review CloudWatch Logs, log groups, streams and retention. Identify application logs worth collecting. | 06/10/2026 | 06/10/2026 | [CloudWatch advanced workshop](https://000036.awsfcaj.com/) |
-| Wednesday | Study the CloudWatch Agent. Distinguish default EC2 metrics from operating-system metrics such as memory that require additional collection. | 07/10/2026 | 07/10/2026 | [CloudWatch advanced workshop](https://000036.awsfcaj.com/) |
-| Thursday | Review alarm thresholds, evaluation periods and missing-data handling. Study notifications through Amazon SNS. | 08/10/2026 | 08/10/2026 | [Monitoring with Amazon CloudWatch](https://000008.awsfcaj.com/) |
-| Friday | Outline a slow-backend investigation: correlate error timing, CPU, database connections and application logs. | 09/10/2026 | 09/10/2026 | [Monitoring with Amazon CloudWatch](https://000008.awsfcaj.com/)<br>[CloudWatch advanced workshop](https://000036.awsfcaj.com/) |
+| Monday | Study metrics, namespaces and dimensions. Review EC2 CPU and RDS database-connection examples. | 05/10/2026 | 05/10/2026 | [Viewing CloudWatch metrics](https://000036.awsfcaj.com/3-cloudwatchmetric/3.1-view/)<br>[Default EC2 metrics and CloudWatch](https://000032.awsfcaj.com/4-cloudwatch-intro/) |
+| Tuesday | Review CloudWatch Logs, log groups, streams and retention. Identify application logs worth collecting. | 06/10/2026 | 06/10/2026 | [CloudWatch Logs, log groups and log streams](https://000036.awsfcaj.com/4-cloudwatchlogs/4.1-logs/) |
+| Wednesday | Study the CloudWatch Agent. Distinguish default EC2 metrics from operating-system metrics such as memory that require additional collection. | 07/10/2026 | 07/10/2026 | [Install CloudWatch Agent to collect operating-system metrics](https://000032.awsfcaj.com/5-install-cloudwatch-agent/) |
+| Thursday | Review alarm thresholds, evaluation periods and missing-data handling. Study notifications through Amazon SNS. | 08/10/2026 | 08/10/2026 | [Create CloudWatch alarms and notifications](https://000036.awsfcaj.com/5-cloudwatchalarm/) |
+| Friday | Outline a slow-backend investigation: correlate error timing, CPU, database connections and application logs. | 09/10/2026 | 09/10/2026 | [Viewing CloudWatch metrics](https://000036.awsfcaj.com/3-cloudwatchmetric/3.1-view/)<br>[CloudWatch Logs, log groups and log streams](https://000036.awsfcaj.com/4-cloudwatchlogs/4.1-logs/) |
 
 </div>
 
@@ -45,5 +45,8 @@ Passwords, access tokens and presigned URLs should not be logged. Log retention 
 ## References
 
 - [Cloud Journey — Learning catalogue](https://cloudjourney.awsfcaj.com/)
-- [Monitoring with Amazon CloudWatch](https://000008.awsfcaj.com/)
-- [CloudWatch advanced workshop](https://000036.awsfcaj.com/)
+- [Viewing CloudWatch metrics](https://000036.awsfcaj.com/3-cloudwatchmetric/3.1-view/)
+- [Default EC2 metrics and CloudWatch](https://000032.awsfcaj.com/4-cloudwatch-intro/)
+- [CloudWatch Logs, log groups and log streams](https://000036.awsfcaj.com/4-cloudwatchlogs/4.1-logs/)
+- [Install CloudWatch Agent to collect operating-system metrics](https://000032.awsfcaj.com/5-install-cloudwatch-agent/)
+- [Create CloudWatch alarms and notifications](https://000036.awsfcaj.com/5-cloudwatchalarm/)

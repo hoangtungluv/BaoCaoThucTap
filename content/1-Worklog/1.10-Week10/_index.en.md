@@ -22,11 +22,11 @@ This week covers two complementary areas: event-driven execution with Lambda and
 
 | Day | Study and review activity | Start date | Completion date | Study sources |
 | --- | --- | --- | --- | --- |
-| Monday | Study Lambda functions, runtimes and triggers. Compare event-driven tasks with a continuously running backend on EC2. | 12/10/2026 | 12/10/2026 | [Serverless automation with AWS Lambda](https://000022.awsfcaj.com/) |
-| Tuesday | Review execution roles, timeout, memory and logging. Consider an S3 event-processing task as a possible extension. | 13/10/2026 | 13/10/2026 | [Serverless automation with AWS Lambda](https://000022.awsfcaj.com/) |
+| Monday | Study Lambda functions, runtimes and triggers. Compare event-driven tasks with a continuously running backend on EC2. | 12/10/2026 | 12/10/2026 | [AWS Lambda overview](https://000022.awsfcaj.com/1-introduce/) |
+| Tuesday | Review execution roles, timeout, memory and logging. Consider an S3 event-processing task as a possible extension. | 13/10/2026 | 13/10/2026 | [IAM roles for Lambda](https://000022.awsfcaj.com/4-createroleforlambda/)<br>[Create a Lambda function and configure execution](https://000022.awsfcaj.com/5-createlambdafunction/5.1-createlambdafunction-stop/) |
 | Wednesday | Study Systems Manager and managed nodes. Review SSM Agent, IAM role and service-endpoint connectivity requirements. | 14/10/2026 | 14/10/2026 | [Systems management with Systems Manager](https://000031.awsfcaj.com/) |
 | Thursday | Compare Session Manager with SSH and study Run Command. Identify access controls and the scope of affected servers. | 15/10/2026 | 15/10/2026 | [Remote access with Session Manager](https://000058.awsfcaj.com/)<br>[Systems management with Systems Manager](https://000031.awsfcaj.com/) |
-| Friday | Review Parameter Store, distinguishing ordinary configuration from sensitive values. Summarize possible CloudDocs operational uses. | 16/10/2026 | 16/10/2026 | [Systems management with Systems Manager](https://000031.awsfcaj.com/) |
+| Friday | Review Parameter Store, distinguishing ordinary configuration from sensitive values. Summarize possible CloudDocs operational uses. | 16/10/2026 | 16/10/2026 | [Using Parameter Store in a custom resource](https://000037.awsfcaj.com/4-cloudformationadvance/4.1-customresource/4.1.1-createlambdafunction/) |
 
 </div>
 
@@ -45,6 +45,9 @@ Not every backend function is suitable for Lambda. Session Manager also depends 
 ## References
 
 - [Cloud Journey — Learning catalogue](https://cloudjourney.awsfcaj.com/)
-- [Serverless automation with AWS Lambda](https://000022.awsfcaj.com/)
+- [AWS Lambda overview](https://000022.awsfcaj.com/1-introduce/)
+- [IAM roles for Lambda](https://000022.awsfcaj.com/4-createroleforlambda/)
+- [Create a Lambda function and configure execution](https://000022.awsfcaj.com/5-createlambdafunction/5.1-createlambdafunction-stop/)
 - [Systems management with Systems Manager](https://000031.awsfcaj.com/)
 - [Remote access with Session Manager](https://000058.awsfcaj.com/)
+- [Using Parameter Store in a custom resource](https://000037.awsfcaj.com/4-cloudformationadvance/4.1-customresource/4.1.1-createlambdafunction/)

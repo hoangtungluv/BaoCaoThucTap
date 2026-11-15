@@ -26,7 +26,7 @@ The first week focuses on the First Cloud AI Journey internship program at AWS V
 | Tuesday | Read about cloud computing. Distinguish IaaS, PaaS and SaaS through examples and compare them with self-managed infrastructure. | 11/08/2026 | 11/08/2026 | [Explore AWS services](https://cloudjourney.awsfcaj.com/1-explore/) |
 | Wednesday | Review how the AWS Management Console is organized. Study Regions, Availability Zones and service resource scopes. | 12/08/2026 | 12/08/2026 | [Amazon EC2 overview](https://000004.awsfcaj.com/1-introduce/)<br>[Amazon VPC and networking](https://000003.awsfcaj.com/1-introduce/) |
 | Thursday | Study the root user, MFA and the shared responsibility model. Identify the responsibilities retained by the customer. | 13/08/2026 | 13/08/2026 | [Access management with IAM](https://000002.awsfcaj.com/)<br>[Creating your first AWS account](https://000001.awsfcaj.com/) |
-| Friday | Read about AWS Billing and AWS Budgets. Summarize cost-tracking principles and prepare for IAM. | 14/08/2026 | 14/08/2026 | [Managing costs with AWS Budgets](https://000007.awsfcaj.com/2-cost-budgets/) |
+| Friday | Read about AWS Billing and AWS Budgets. Summarize cost-tracking principles and prepare for IAM. | 14/08/2026 | 14/08/2026 | [AWS Budgets and billing alerts](https://000001.awsfcaj.com/6-danh-s%C3%A1ch-s%C3%A1t-th%E1%BB%A7-credit-c%E1%BA%A7n-tr%C3%A1nh/) |
 
 </div>
 
@@ -50,4 +50,4 @@ A budget alert does not mean that all resources automatically stop at the thresh
 - [Amazon EC2 overview](https://000004.awsfcaj.com/1-introduce/)
 - [Amazon VPC and networking](https://000003.awsfcaj.com/1-introduce/)
 - [Access management with IAM](https://000002.awsfcaj.com/)
-- [Managing costs with AWS Budgets](https://000007.awsfcaj.com/2-cost-budgets/)
+- [AWS Budgets and billing alerts](https://000001.awsfcaj.com/6-danh-s%C3%A1ch-s%C3%A1t-th%E1%BB%A7-credit-c%E1%BA%A7n-tr%C3%A1nh/)

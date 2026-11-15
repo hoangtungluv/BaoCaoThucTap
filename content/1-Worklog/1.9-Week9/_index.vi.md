@@ -22,11 +22,11 @@ Sau khi tìm hiểu các thành phần ứng dụng, em chuyển sang câu hỏi
 
 | Thứ | Nội dung tìm hiểu và tổng hợp | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ Hai | Tìm hiểu metric, namespace và dimension. Đọc ví dụ theo dõi CPU EC2 và kết nối cơ sở dữ liệu RDS. | 05/10/2026 | 05/10/2026 | [Giám sát với Amazon CloudWatch](https://000008.awsfcaj.com/) |
-| Thứ Ba | Đọc về CloudWatch Logs, log group, log stream và retention. Xác định loại nhật ký ứng dụng cần thu thập. | 06/10/2026 | 06/10/2026 | [CloudWatch nâng cao](https://000036.awsfcaj.com/) |
-| Thứ Tư | Tìm hiểu CloudWatch Agent. Phân biệt chỉ số EC2 có sẵn với chỉ số hệ điều hành như bộ nhớ cần cơ chế thu thập bổ sung. | 07/10/2026 | 07/10/2026 | [CloudWatch nâng cao](https://000036.awsfcaj.com/) |
-| Thứ Năm | Đọc cách xác định threshold, evaluation period và missing data cho alarm. Tìm hiểu kết nối thông báo với Amazon SNS. | 08/10/2026 | 08/10/2026 | [Giám sát với Amazon CloudWatch](https://000008.awsfcaj.com/) |
-| Thứ Sáu | Xây dựng cách tiếp cận tình huống backend phản hồi chậm trên giấy: đối chiếu thời điểm lỗi, CPU, kết nối DB và log ứng dụng. | 09/10/2026 | 09/10/2026 | [Giám sát với Amazon CloudWatch](https://000008.awsfcaj.com/)<br>[CloudWatch nâng cao](https://000036.awsfcaj.com/) |
+| Thứ Hai | Tìm hiểu metric, namespace và dimension. Đọc ví dụ theo dõi CPU EC2 và kết nối cơ sở dữ liệu RDS. | 05/10/2026 | 05/10/2026 | [Xem các chỉ số CloudWatch](https://000036.awsfcaj.com/3-cloudwatchmetric/3.1-view/)<br>[Chỉ số EC2 mặc định và CloudWatch](https://000032.awsfcaj.com/4-cloudwatch-intro/) |
+| Thứ Ba | Đọc về CloudWatch Logs, log group, log stream và retention. Xác định loại nhật ký ứng dụng cần thu thập. | 06/10/2026 | 06/10/2026 | [CloudWatch Logs, log group và log stream](https://000036.awsfcaj.com/4-cloudwatchlogs/4.1-logs/) |
+| Thứ Tư | Tìm hiểu CloudWatch Agent. Phân biệt chỉ số EC2 có sẵn với chỉ số hệ điều hành như bộ nhớ cần cơ chế thu thập bổ sung. | 07/10/2026 | 07/10/2026 | [Cài CloudWatch Agent để thu thập chỉ số hệ điều hành](https://000032.awsfcaj.com/5-install-cloudwatch-agent/) |
+| Thứ Năm | Đọc cách xác định threshold, evaluation period và missing data cho alarm. Tìm hiểu kết nối thông báo với Amazon SNS. | 08/10/2026 | 08/10/2026 | [Tạo CloudWatch Alarm và thông báo](https://000036.awsfcaj.com/5-cloudwatchalarm/) |
+| Thứ Sáu | Xây dựng cách tiếp cận tình huống backend phản hồi chậm trên giấy: đối chiếu thời điểm lỗi, CPU, kết nối DB và log ứng dụng. | 09/10/2026 | 09/10/2026 | [Xem các chỉ số CloudWatch](https://000036.awsfcaj.com/3-cloudwatchmetric/3.1-view/)<br>[CloudWatch Logs, log group và log stream](https://000036.awsfcaj.com/4-cloudwatchlogs/4.1-logs/) |
 
 </div>
 
@@ -45,5 +45,8 @@ Không ghi mật khẩu, access token hoặc presigned URL vào log. Cũng cần
 ## Tài liệu tham khảo
 
 - [Cloud Journey — Danh mục tài liệu](https://cloudjourney.awsfcaj.com/)
-- [Giám sát với Amazon CloudWatch](https://000008.awsfcaj.com/)
-- [CloudWatch nâng cao](https://000036.awsfcaj.com/)
+- [Xem các chỉ số CloudWatch](https://000036.awsfcaj.com/3-cloudwatchmetric/3.1-view/)
+- [Chỉ số EC2 mặc định và CloudWatch](https://000032.awsfcaj.com/4-cloudwatch-intro/)
+- [CloudWatch Logs, log group và log stream](https://000036.awsfcaj.com/4-cloudwatchlogs/4.1-logs/)
+- [Cài CloudWatch Agent để thu thập chỉ số hệ điều hành](https://000032.awsfcaj.com/5-install-cloudwatch-agent/)
+- [Tạo CloudWatch Alarm và thông báo](https://000036.awsfcaj.com/5-cloudwatchalarm/)

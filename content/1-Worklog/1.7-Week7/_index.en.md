@@ -23,8 +23,8 @@ This week moves from recognizing services to interacting with resources through 
 | Day | Study and review activity | Start date | Completion date | Study sources |
 | --- | --- | --- | --- | --- |
 | Monday | Review AWS CLI command structure and help. Study the effects of Region selection and output formats. | 21/09/2026 | 21/09/2026 | [Getting started with AWS CLI](https://000011.awsfcaj.com/) |
-| Tuesday | Study profiles and credential sources. Analyze aws sts get-caller-identity as a way to identify the current principal. | 22/09/2026 | 22/09/2026 | [Getting started with AWS CLI](https://000011.awsfcaj.com/)<br>[AWS CLI with IAM](https://000011.awsfcaj.com/7-iam/) |
-| Wednesday | Study AWS CloudShell, its browser-based command environment and permissions associated with the signed-in session. | 23/09/2026 | 23/09/2026 | [Installing AWS CLI](https://000011.awsfcaj.com/3-installcli/)<br>[Getting started with AWS CLI](https://000011.awsfcaj.com/) |
+| Tuesday | Study profiles and credential sources. Analyze aws sts get-caller-identity as a way to identify the current principal. | 22/09/2026 | 22/09/2026 | [AWS CLI profiles and credentials](https://000011.awsfcaj.com/)<br>[Check identity with AWS STS in CloudShell](https://000037.awsfcaj.com/3-cloudformationbasic/3.1-launchawscloudshell/) |
+| Wednesday | Study AWS CloudShell, its browser-based command environment and permissions associated with the signed-in session. | 23/09/2026 | 23/09/2026 | [Getting started with AWS CloudShell](https://000049.awsfcaj.com/) |
 | Thursday | Review IAM roles for EC2 and instance profiles. Compare temporary credential retrieval with embedding access keys in source code. | 24/09/2026 | 24/09/2026 | [IAM roles for EC2](https://000048.awsfcaj.com/) |
 | Friday | Analyze resource-inspection commands and error scenarios. Summarize checking identity, Region and permissions before changing configuration. | 25/09/2026 | 25/09/2026 | [AWS CLI troubleshooting](https://000011.awsfcaj.com/10-troubleshoot/)<br>[AWS CLI with IAM](https://000011.awsfcaj.com/7-iam/) |
 
@@ -46,7 +46,8 @@ CloudShell provides a command environment, not a way around IAM restrictions. Be
 
 - [Cloud Journey — Learning catalogue](https://cloudjourney.awsfcaj.com/)
 - [Getting started with AWS CLI](https://000011.awsfcaj.com/)
-- [AWS CLI with IAM](https://000011.awsfcaj.com/7-iam/)
-- [Installing AWS CLI](https://000011.awsfcaj.com/3-installcli/)
+- [Check identity with AWS STS in CloudShell](https://000037.awsfcaj.com/3-cloudformationbasic/3.1-launchawscloudshell/)
+- [Getting started with AWS CloudShell](https://000049.awsfcaj.com/)
 - [IAM roles for EC2](https://000048.awsfcaj.com/)
 - [AWS CLI troubleshooting](https://000011.awsfcaj.com/10-troubleshoot/)
+- [AWS CLI with IAM](https://000011.awsfcaj.com/7-iam/)

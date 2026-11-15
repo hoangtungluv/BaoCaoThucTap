@@ -22,11 +22,11 @@ Tuần này tập trung vào cách lưu tệp cho ứng dụng quản lý tài l
 
 | Thứ | Nội dung tìm hiểu và tổng hợp | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ Hai | So sánh object storage, block storage và file storage. Xác định vai trò cơ bản của S3, EBS và EFS. | 07/09/2026 | 07/09/2026 | [Lưu trữ website tĩnh trên Amazon S3](https://000057.awsfcaj.com/)<br>[Tạo và quản lý EBS Snapshot](https://000004.awsfcaj.com/5-amazonec2basic/5.2-createec2snapshot/) |
-| Thứ Ba | Tìm hiểu bucket, object key, metadata và Region. Đọc cách tổ chức tệp theo prefix trong S3. | 08/09/2026 | 08/09/2026 | [Lưu trữ website tĩnh trên Amazon S3](https://000057.awsfcaj.com/) |
+| Thứ Hai | So sánh object storage, block storage và file storage. Xác định vai trò cơ bản của S3, EBS và EFS. | 07/09/2026 | 07/09/2026 | [Tổng quan Amazon S3 và các lớp lưu trữ](https://000057.awsfcaj.com/1-introduce/)<br>[Lưu trữ EBS và Instance Store trên EC2](https://000004.awsfcaj.com/1-introduce/)<br>[Tổng quan Amazon EFS](https://000068.awsfcaj.com/4-efsstorageperformance/) |
+| Thứ Ba | Tìm hiểu bucket, object key, metadata và Region. Đọc cách tổ chức tệp theo prefix trong S3. | 08/09/2026 | 08/09/2026 | [Tổng quan Amazon S3 và các lớp lưu trữ](https://000057.awsfcaj.com/1-introduce/) |
 | Thứ Tư | Đọc về Block Public Access, bucket policy và mã hóa. Phân biệt kiểm soát truy cập với bảo vệ dữ liệu lưu trữ. | 09/09/2026 | 09/09/2026 | [S3 Block Public Access](https://000069.awsfcaj.com/6-s3pba/)<br>[Mã hóa SSE-S3](https://000069.awsfcaj.com/4-requiresse/) |
-| Thứ Năm | Tìm hiểu presigned URL và CORS. Phân tích luồng trình duyệt nhận URL từ backend rồi truyền tệp trực tiếp tới S3. | 10/09/2026 | 10/09/2026 | [AWS CLI với Amazon S3](https://000011.awsfcaj.com/5-s3/)<br>[Thực hành bảo mật Amazon S3](https://000069.awsfcaj.com/) |
-| Thứ Sáu | Tìm hiểu Versioning, Lifecycle và các nhóm chi phí. Liên hệ việc lưu tệp trên S3 với metadata trong cơ sở dữ liệu CloudDocs. | 11/09/2026 | 11/09/2026 | [Lưu trữ website tĩnh trên Amazon S3](https://000057.awsfcaj.com/)<br>[Thực hành bảo mật Amazon S3](https://000069.awsfcaj.com/) |
+| Thứ Năm | Tìm hiểu presigned URL và CORS. Phân tích luồng trình duyệt nhận URL từ backend rồi truyền tệp trực tiếp tới S3. | 10/09/2026 | 10/09/2026 | [Chia sẻ dữ liệu S3 bằng presigned URL](https://000033.awsfcaj.com/6-demo/)<br>[CORS và các thực hành tốt với S3](https://000057.awsfcaj.com/12-notes/) |
+| Thứ Sáu | Tìm hiểu Versioning, Lifecycle và các nhóm chi phí. Liên hệ việc lưu tệp trên S3 với metadata trong cơ sở dữ liệu CloudDocs. | 11/09/2026 | 11/09/2026 | [S3 Versioning và chi phí lưu phiên bản](https://000057.awsfcaj.com/8-versioning/)<br>[CORS và các thực hành tốt với S3](https://000057.awsfcaj.com/12-notes/) |
 
 </div>
 
@@ -45,9 +45,11 @@ CORS không thay thế cơ chế phân quyền. Một cấu hình CORS phù hợ
 ## Tài liệu tham khảo
 
 - [Cloud Journey — Danh mục tài liệu](https://cloudjourney.awsfcaj.com/)
-- [Lưu trữ website tĩnh trên Amazon S3](https://000057.awsfcaj.com/)
-- [Tạo và quản lý EBS Snapshot](https://000004.awsfcaj.com/5-amazonec2basic/5.2-createec2snapshot/)
+- [Tổng quan Amazon S3 và các lớp lưu trữ](https://000057.awsfcaj.com/1-introduce/)
+- [Lưu trữ EBS và Instance Store trên EC2](https://000004.awsfcaj.com/1-introduce/)
+- [Tổng quan Amazon EFS](https://000068.awsfcaj.com/4-efsstorageperformance/)
 - [S3 Block Public Access](https://000069.awsfcaj.com/6-s3pba/)
 - [Mã hóa SSE-S3](https://000069.awsfcaj.com/4-requiresse/)
-- [AWS CLI với Amazon S3](https://000011.awsfcaj.com/5-s3/)
-- [Thực hành bảo mật Amazon S3](https://000069.awsfcaj.com/)
+- [Chia sẻ dữ liệu S3 bằng presigned URL](https://000033.awsfcaj.com/6-demo/)
+- [CORS và các thực hành tốt với S3](https://000057.awsfcaj.com/12-notes/)
+- [S3 Versioning và chi phí lưu phiên bản](https://000057.awsfcaj.com/8-versioning/)

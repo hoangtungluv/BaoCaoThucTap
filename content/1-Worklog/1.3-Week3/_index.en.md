@@ -26,7 +26,7 @@ This week examines traffic paths in AWS, from address spaces to access controls.
 | Tuesday | Distinguish public and private subnets through routing configuration. Study how subnets relate to Availability Zones. | 25/08/2026 | 25/08/2026 | [VPC subnets](https://000003.awsfcaj.com/1-introduce/1.1-subnets/) |
 | Wednesday | Study route tables, internet gateways and NAT gateways. Analyze outbound Internet paths for different resources. | 26/08/2026 | 26/08/2026 | [Route tables](https://000003.awsfcaj.com/1-introduce/1.2-routetable/)<br>[NAT gateways](https://000003.awsfcaj.com/1-introduce/1.4-natgateway/) |
 | Thursday | Compare security groups and network ACLs in scope, connection state and rule processing. | 27/08/2026 | 27/08/2026 | [Security groups](https://000003.awsfcaj.com/2-firewallinvpc/2.1-securitygroup/)<br>[Network ACLs](https://000003.awsfcaj.com/2-firewallinvpc/2.2-networkacls/) |
-| Friday | Review a server-and-database network diagram. Identify required connections and paths that should be restricted. | 28/08/2026 | 28/08/2026 | [Amazon VPC and networking](https://000003.awsfcaj.com/1-introduce/)<br>[Database essentials with Amazon RDS](https://000005.awsfcaj.com/) |
+| Friday | Review a server-and-database network diagram. Identify required connections and paths that should be restricted. | 28/08/2026 | 28/08/2026 | [Amazon VPC and networking](https://000003.awsfcaj.com/1-introduce/)<br>[RDS network and access prerequisites](https://000005.awsfcaj.com/2-prerequiste/) |
 
 </div>
 
@@ -51,4 +51,4 @@ Placing a resource in a public subnet does not by itself ensure Internet reachab
 - [NAT gateways](https://000003.awsfcaj.com/1-introduce/1.4-natgateway/)
 - [Security groups](https://000003.awsfcaj.com/2-firewallinvpc/2.1-securitygroup/)
 - [Network ACLs](https://000003.awsfcaj.com/2-firewallinvpc/2.2-networkacls/)
-- [Database essentials with Amazon RDS](https://000005.awsfcaj.com/)
+- [RDS network and access prerequisites](https://000005.awsfcaj.com/2-prerequiste/)

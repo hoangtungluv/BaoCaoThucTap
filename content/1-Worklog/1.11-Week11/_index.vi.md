@@ -22,11 +22,11 @@ Tuần này mở rộng từ một máy chủ sang kiến trúc có nhiều thà
 
 | Thứ | Nội dung tìm hiểu và tổng hợp | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ Hai | So sánh mở rộng theo chiều dọc và chiều ngang. Xác định giới hạn của phương án chỉ tăng cấu hình một EC2. | 19/10/2026 | 19/10/2026 | [Mở rộng ứng dụng với EC2 Auto Scaling](https://000006.awsfcaj.com/) |
-| Thứ Ba | Tìm hiểu Application Load Balancer, listener, target group và health check. Phân tích đường đi của một yêu cầu HTTP. | 20/10/2026 | 20/10/2026 | [Xây dựng ứng dụng web có tính sẵn sàng cao](https://000101.awsfcaj.com/)<br>[Mở rộng ứng dụng với EC2 Auto Scaling](https://000006.awsfcaj.com/) |
-| Thứ Tư | Đọc về launch template, Auto Scaling Group và các mức minimum, desired, maximum. Tìm hiểu chính sách mở rộng theo chỉ số. | 21/10/2026 | 21/10/2026 | [Mở rộng ứng dụng với EC2 Auto Scaling](https://000006.awsfcaj.com/) |
-| Thứ Năm | Tìm hiểu bố trí tài nguyên qua nhiều Availability Zone. Phân biệt tính sẵn sàng của lớp ứng dụng với lớp cơ sở dữ liệu. | 22/10/2026 | 22/10/2026 | [Xây dựng ứng dụng web có tính sẵn sàng cao](https://000101.awsfcaj.com/)<br>[Làm quen Amazon RDS](https://000005.awsfcaj.com/) |
-| Thứ Sáu | Phác thảo hướng mở rộng CloudDocs. Rà soát session, tệp cục bộ, cấu hình dùng chung và kết nối DB khi có nhiều backend. | 23/10/2026 | 23/10/2026 | [Xây dựng ứng dụng web có tính sẵn sàng cao](https://000101.awsfcaj.com/) |
+| Thứ Hai | So sánh mở rộng theo chiều dọc và chiều ngang. Xác định giới hạn của phương án chỉ tăng cấu hình một EC2. | 19/10/2026 | 19/10/2026 | [Tạo Auto Scaling Group và chính sách mở rộng](https://000021.awsfcaj.com/4-asgforec2/4.5-createasg/) |
+| Thứ Ba | Tìm hiểu Application Load Balancer, listener, target group và health check. Phân tích đường đi của một yêu cầu HTTP. | 20/10/2026 | 20/10/2026 | [Tạo Application Load Balancer](https://000021.awsfcaj.com/4-asgforec2/4.4-createloadbalancer/)<br>[Tạo Target Group và cấu hình Health Check](https://000021.awsfcaj.com/4-asgforec2/4.3-createtg/) |
+| Thứ Tư | Đọc về launch template, Auto Scaling Group và các mức minimum, desired, maximum. Tìm hiểu chính sách mở rộng theo chỉ số. | 21/10/2026 | 21/10/2026 | [Tạo Launch Template](https://000021.awsfcaj.com/4-asgforec2/4.2-createlaunchtemplate/)<br>[Tạo Auto Scaling Group và chính sách mở rộng](https://000021.awsfcaj.com/4-asgforec2/4.5-createasg/) |
+| Thứ Năm | Tìm hiểu bố trí tài nguyên qua nhiều Availability Zone. Phân biệt tính sẵn sàng của lớp ứng dụng với lớp cơ sở dữ liệu. | 22/10/2026 | 22/10/2026 | [Kiến trúc WordPress với Auto Scaling, Load Balancer và RDS](https://000021.awsfcaj.com/1-introduce/)<br>[Tạo RDS MySQL và cấu hình Multi-AZ](https://000005.awsfcaj.com/3-create-rds/) |
+| Thứ Sáu | Phác thảo hướng mở rộng CloudDocs. Rà soát session, tệp cục bộ, cấu hình dùng chung và kết nối DB khi có nhiều backend. | 23/10/2026 | 23/10/2026 | [Kiến trúc WordPress với Auto Scaling, Load Balancer và RDS](https://000021.awsfcaj.com/1-introduce/) |
 
 </div>
 
@@ -45,6 +45,9 @@ Auto Scaling không tự giải quyết mọi nút thắt hiệu năng. Nếu c�
 ## Tài liệu tham khảo
 
 - [Cloud Journey — Danh mục tài liệu](https://cloudjourney.awsfcaj.com/)
-- [Mở rộng ứng dụng với EC2 Auto Scaling](https://000006.awsfcaj.com/)
-- [Xây dựng ứng dụng web có tính sẵn sàng cao](https://000101.awsfcaj.com/)
-- [Làm quen Amazon RDS](https://000005.awsfcaj.com/)
+- [Tạo Auto Scaling Group và chính sách mở rộng](https://000021.awsfcaj.com/4-asgforec2/4.5-createasg/)
+- [Tạo Application Load Balancer](https://000021.awsfcaj.com/4-asgforec2/4.4-createloadbalancer/)
+- [Tạo Target Group và cấu hình Health Check](https://000021.awsfcaj.com/4-asgforec2/4.3-createtg/)
+- [Tạo Launch Template](https://000021.awsfcaj.com/4-asgforec2/4.2-createlaunchtemplate/)
+- [Kiến trúc WordPress với Auto Scaling, Load Balancer và RDS](https://000021.awsfcaj.com/1-introduce/)
+- [Tạo RDS MySQL và cấu hình Multi-AZ](https://000005.awsfcaj.com/3-create-rds/)

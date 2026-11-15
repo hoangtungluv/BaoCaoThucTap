@@ -24,7 +24,7 @@ The final week focuses on organizing knowledge and reviewing the report. I relat
 | --- | --- | --- | --- | --- |
 | Monday | Organize IAM, VPC, EC2, S3, RDS and Cognito concepts. Describe each service in the CloudDocs architecture. | 26/10/2026 | 26/10/2026 | [Explore AWS services](https://cloudjourney.awsfcaj.com/1-explore/) |
 | Tuesday | Review sign-in, document authorization, file transfer and metadata persistence. Distinguish IAM permissions from business permissions. | 27/10/2026 | 27/10/2026 | [Cross-site authentication with Cognito](https://000141.awsfcaj.com/)<br>[S3 security best practices](https://000069.awsfcaj.com/) |
-| Wednesday | Review workshop text and image captions. Distinguish evidenced outcomes from test scenarios and proposed architectures. | 28/10/2026 | 28/10/2026 | [Building highly available web applications](https://000101.awsfcaj.com/)<br>[S3 security best practices](https://000069.awsfcaj.com/) |
+| Wednesday | Review workshop text and image captions. Distinguish evidenced outcomes from test scenarios and proposed architectures. | 28/10/2026 | 28/10/2026 | [WordPress architecture with Auto Scaling, a load balancer and RDS](https://000021.awsfcaj.com/1-introduce/)<br>[S3 security best practices](https://000069.awsfcaj.com/) |
 | Thursday | Edit the worklog, proposal and self-evaluation. Check terminology, dates, links and Vietnamese–English consistency. | 29/10/2026 | 29/10/2026 | [Cloud Journey — Learning catalogue](https://cloudjourney.awsfcaj.com/) |
 | Friday | Summarize learning, limitations and future development. Review sensitive information before preparing the submission version. | 30/10/2026 | 30/10/2026 | [Cloud Journey — Learning catalogue](https://cloudjourney.awsfcaj.com/)<br>[Access management with IAM](https://000002.awsfcaj.com/) |
 
@@ -44,5 +44,5 @@ Report descriptions should agree with the evidence. Tests without confirmed resu
 - [Explore AWS services](https://cloudjourney.awsfcaj.com/1-explore/)
 - [Cross-site authentication with Cognito](https://000141.awsfcaj.com/)
 - [S3 security best practices](https://000069.awsfcaj.com/)
-- [Building highly available web applications](https://000101.awsfcaj.com/)
+- [WordPress architecture with Auto Scaling, a load balancer and RDS](https://000021.awsfcaj.com/1-introduce/)
 - [Access management with IAM](https://000002.awsfcaj.com/)

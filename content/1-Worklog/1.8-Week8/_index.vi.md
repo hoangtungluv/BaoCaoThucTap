@@ -13,7 +13,7 @@ Tuần này tập trung vào danh tính người dùng của ứng dụng. Em ph
 
 ## Mục tiêu trong tuần
 
-- Hiểu User Pool, App Client và luồng Authorization Code với PKCE.
+- Hiểu User Pool, App Client và cách tích hợp Cognito vào ứng dụng web.
 - Phân biệt ID Token, Access Token, Refresh Token và kiểm tra quyền nghiệp vụ.
 
 ## Nội dung công việc
@@ -22,11 +22,11 @@ Tuần này tập trung vào danh tính người dùng của ứng dụng. Em ph
 
 | Thứ | Nội dung tìm hiểu và tổng hợp | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ Hai | Tìm hiểu User Pool, App Client và trạng thái người dùng. Phân biệt người dùng ứng dụng với IAM User. | 28/09/2026 | 28/09/2026 | [Xác thực liên ứng dụng với Cognito](https://000141.awsfcaj.com/) |
-| Thứ Ba | Đọc về trang đăng nhập, callback URL và logout URL. Phân tích luồng Authorization Code kết hợp PKCE cho ứng dụng web. | 29/09/2026 | 29/09/2026 | [Triển khai và kiểm tra Cognito](https://000141.awsfcaj.com/4-app-configuration/) |
-| Thứ Tư | So sánh ID Token, Access Token và Refresh Token theo mục đích sử dụng, thời hạn và cách làm mới phiên. | 30/09/2026 | 30/09/2026 | [Phân tích mã nguồn tích hợp Cognito](https://000141.awsfcaj.com/3-note-code/) |
-| Thứ Năm | Tìm hiểu kiểm tra chữ ký JWT, issuer, hạn sử dụng, token_use và thông tin ứng dụng phù hợp từng loại token. | 01/10/2026 | 01/10/2026 | [Phân tích mã nguồn tích hợp Cognito](https://000141.awsfcaj.com/3-note-code/) |
-| Thứ Sáu | Liên hệ các tình huống token thiếu, hết hạn hoặc người dùng không có quyền tài liệu. Phân biệt lỗi xác thực với lỗi phân quyền. | 02/10/2026 | 02/10/2026 | [Triển khai và kiểm tra Cognito](https://000141.awsfcaj.com/4-app-configuration/)<br>[Phân tích mã nguồn tích hợp Cognito](https://000141.awsfcaj.com/3-note-code/) |
+| Thứ Hai | Tìm hiểu User Pool, App Client và trạng thái người dùng. Phân biệt người dùng ứng dụng với IAM User. | 28/09/2026 | 28/09/2026 | [Tạo Cognito User Pool và App Client](https://000081.awsfcaj.com/2-create-user-pool/) |
+| Thứ Ba | Tìm hiểu cách tích hợp Cognito User Pool vào ứng dụng web. Đối chiếu cấu hình User Pool ID, App Client ID và Region trong ứng dụng. | 29/09/2026 | 29/09/2026 | [Tích hợp Cognito vào ứng dụng SPA](https://000055.awsfcaj.com/4-configure-aaa/4.1-add-authentication-with-cognito/) |
+| Thứ Tư | So sánh ID Token, Access Token và Refresh Token theo mục đích sử dụng, thời hạn và cách làm mới phiên. | 30/09/2026 | 30/09/2026 | [Phân biệt các token khi đăng nhập bằng Cognito](https://000081.awsfcaj.com/3-create-api-and-lambda-function/) |
+| Thứ Năm | Tìm hiểu Cognito Authorizer trên API Gateway. Đọc cách lấy token từ header Authorization và sử dụng claims để nhận biết người dùng gọi API. | 01/10/2026 | 01/10/2026 | [Bảo vệ API bằng Cognito Authorizer](https://000117.awsfcaj.com/6-identity/6.8-authorizer/) |
+| Thứ Sáu | Liên hệ các tình huống token thiếu, hết hạn hoặc người dùng không có quyền tài liệu. Phân biệt lỗi xác thực với lỗi phân quyền. | 02/10/2026 | 02/10/2026 | [Xác thực API và phản hồi khi chưa được phép](https://000055.awsfcaj.com/4-configure-aaa/4.2-setup-authentication/)<br>[Đăng nhập Cognito và phân biệt các token](https://000081.awsfcaj.com/3-create-api-and-lambda-function/) |
 
 </div>
 
@@ -45,6 +45,8 @@ Giải mã nội dung JWT chưa đủ để tin cậy token. Cần xác minh ch�
 ## Tài liệu tham khảo
 
 - [Cloud Journey — Danh mục tài liệu](https://cloudjourney.awsfcaj.com/)
-- [Xác thực liên ứng dụng với Cognito](https://000141.awsfcaj.com/)
-- [Triển khai và kiểm tra Cognito](https://000141.awsfcaj.com/4-app-configuration/)
-- [Phân tích mã nguồn tích hợp Cognito](https://000141.awsfcaj.com/3-note-code/)
+- [Tạo Cognito User Pool và App Client](https://000081.awsfcaj.com/2-create-user-pool/)
+- [Tích hợp Cognito vào ứng dụng SPA](https://000055.awsfcaj.com/4-configure-aaa/4.1-add-authentication-with-cognito/)
+- [Phân biệt các token khi đăng nhập bằng Cognito](https://000081.awsfcaj.com/3-create-api-and-lambda-function/)
+- [Bảo vệ API bằng Cognito Authorizer](https://000117.awsfcaj.com/6-identity/6.8-authorizer/)
+- [Xác thực API và phản hồi khi chưa được phép](https://000055.awsfcaj.com/4-configure-aaa/4.2-setup-authentication/)
