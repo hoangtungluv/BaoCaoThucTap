@@ -1,6 +1,6 @@
 ---
 title: "Worklog tuần 5"
-menuTitle: "Worklog tuần 5"
+menuTitle: "Worklog Tuần 5"
 date: 2026-11-11
 weight: 5
 chapter: false
