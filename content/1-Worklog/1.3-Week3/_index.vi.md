@@ -1,6 +1,6 @@
 ---
-title: "Tuần 3: Tìm hiểu Amazon VPC và các thành phần mạng"
-menuTitle: "Nhật ký tuần 3"
+title: "Worklog tuần 3"
+menuTitle: "Worklog tuần 3"
 date: 2026-11-11
 weight: 3
 chapter: false

@@ -1,6 +1,6 @@
 ---
-title: "Tuần 5: Tìm hiểu Amazon S3 và các hình thức lưu trữ trên AWS"
-menuTitle: "Nhật ký tuần 5"
+title: "Worklog tuần 5"
+menuTitle: "Worklog tuần 5"
 date: 2026-11-11
 weight: 5
 chapter: false

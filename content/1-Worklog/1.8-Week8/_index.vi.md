@@ -1,6 +1,6 @@
 ---
-title: "Tuần 8: Tìm hiểu Amazon Cognito, xác thực người dùng và kiểm soát truy cập bằng token"
-menuTitle: "Nhật ký tuần 8"
+title: "Worklog tuần 8"
+menuTitle: "Worklog tuần 8"
 date: 2026-11-11
 weight: 8
 chapter: false

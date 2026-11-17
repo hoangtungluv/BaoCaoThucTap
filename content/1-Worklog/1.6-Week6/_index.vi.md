@@ -1,6 +1,6 @@
 ---
-title: "Tuần 6: Tìm hiểu Amazon RDS và so sánh với Amazon DynamoDB"
-menuTitle: "Nhật ký tuần 6"
+title: "Worklog tuần 6"
+menuTitle: "Worklog tuần 6"
 date: 2026-11-11
 weight: 6
 chapter: false

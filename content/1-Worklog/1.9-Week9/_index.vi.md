@@ -1,6 +1,6 @@
 ---
-title: "Tuần 9: Tìm hiểu Amazon CloudWatch và giám sát hệ thống"
-menuTitle: "Nhật ký tuần 9"
+title: "Worklog tuần 9"
+menuTitle: "Worklog tuần 9"
 date: 2026-11-11
 weight: 9
 chapter: false

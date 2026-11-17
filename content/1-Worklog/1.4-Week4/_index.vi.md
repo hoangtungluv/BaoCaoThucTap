@@ -1,6 +1,6 @@
 ---
-title: "Tuần 4: Tìm hiểu Amazon EC2 và so sánh với Amazon Lightsail"
-menuTitle: "Nhật ký tuần 4"
+title: "Worklog tuần 4"
+menuTitle: "Worklog tuần 4"
 date: 2026-11-11
 weight: 4
 chapter: false

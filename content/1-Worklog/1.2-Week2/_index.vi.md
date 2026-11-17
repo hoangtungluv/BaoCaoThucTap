@@ -1,6 +1,6 @@
 ---
-title: "Tuần 2: Tìm hiểu AWS IAM và quản lý quyền truy cập"
-menuTitle: "Nhật ký tuần 2"
+title: "Worklog tuần 2"
+menuTitle: "Worklog tuần 2"
 date: 2026-11-11
 weight: 2
 chapter: false

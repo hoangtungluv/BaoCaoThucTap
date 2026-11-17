@@ -1,6 +1,6 @@
 ---
-title: "Tuần 7: Tìm hiểu AWS CLI, AWS CloudShell và sử dụng IAM Role"
-menuTitle: "Nhật ký tuần 7"
+title: "Worklog tuần 7"
+menuTitle: "Worklog tuần 7"
 date: 2026-11-11
 weight: 7
 chapter: false

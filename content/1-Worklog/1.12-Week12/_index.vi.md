@@ -1,6 +1,6 @@
 ---
-title: "Tuần 12: Tổng hợp kiến thức, liên hệ với dự án CloudDocs và hoàn thiện báo cáo thực tập"
-menuTitle: "Nhật ký tuần 12"
+title: "Worklog tuần 12"
+menuTitle: "Worklog tuần 12"
 date: 2026-11-11
 weight: 12
 chapter: false

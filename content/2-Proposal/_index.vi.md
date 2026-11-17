@@ -13,7 +13,7 @@ Tại phần này, em trình bày đề xuất **CloudDocs — Hệ thống qu�
 
 ### 1. Tóm tắt điều hành
 
-CloudDocs tập trung tài liệu và quy trình xử lý công việc vào một ứng dụng web. ADMIN quản trị tài khoản, tài liệu và thông báo; USER quản lý tài liệu thuộc sở hữu hoặc được chia sẻ. Backend Java 21/Spring Boot 3.5.6 xử lý REST API và phân quyền; frontend HTML/CSS/JavaScript cung cấp giao diện; MySQL lưu metadata, quan hệ chia sẻ, quota và nhật ký nghiệp vụ. Tệp được lưu trên S3 private, xác thực qua Cognito User Pool.
+CloudDocs tập trung tài liệu và quy trình xử lý công việc vào một ứng dụng web. ADMIN quản trị toàn hệ thống; MANAGER theo dõi tài liệu và giao việc trong phạm vi phòng ban; USER quản lý tài liệu thuộc sở hữu hoặc được chia sẻ và thực hiện công việc được giao. Backend Java 21/Spring Boot 3.5.6 xử lý REST API và phân quyền; frontend HTML/CSS/JavaScript cung cấp giao diện; MySQL lưu metadata, quan hệ chia sẻ, quota và nhật ký nghiệp vụ. Tệp được lưu trên S3 private, xác thực qua Cognito User Pool.
 
 Kiến trúc triển khai mục tiêu sử dụng EC2 chạy ứng dụng và Nginx, RDS MySQL cho cơ sở dữ liệu, IAM Role cho quyền S3. Ứng dụng sử dụng S3 để lưu tài liệu, Cognito để xác thực và MySQL để quản lý dữ liệu nghiệp vụ.
 
@@ -25,18 +25,18 @@ Tài liệu phân tán trên máy cá nhân hoặc kênh chat khiến khó tra c
 
 *Giải pháp*
 
-CloudDocs tổ chức tài liệu theo metadata và phòng ban, hỗ trợ tìm kiếm/lọc, xem trước, tải xuống, chia sẻ theo quyền, yêu thích và thùng rác. Backend kiểm tra quyền trước khi cấp URL có thời hạn; tệp truyền trực tiếp giữa trình duyệt và S3. MySQL lưu thông tin nghiệp vụ và audit. Luồng giao việc–nộp báo cáo–duyệt/yêu cầu sửa là phần mở rộng hiện có đầu tháng 11.
+CloudDocs tổ chức tài liệu theo metadata, phòng ban và cây thư mục, hỗ trợ tìm kiếm/lọc, xem trước, tải xuống, chia sẻ theo quyền, yêu thích và thùng rác. Upload mới và ghi đè nội dung đi qua backend để kiểm tra quyền, hạn mức và lưu tệp lên S3; xem trước/tải xuống sử dụng presigned GET sau khi kiểm tra quyền. MySQL lưu thông tin nghiệp vụ và audit. Phiên bản hiện tại có luồng giao việc–nộp báo cáo–duyệt/yêu cầu sửa, quản lý phòng ban và trang Đã chia sẻ để đổi/thu hồi quyền.
 
 *Lợi ích và hoàn vốn đầu tư (ROI)*
 
 - Giảm thao tác tìm kiếm và chia sẻ thủ công; có thể đo bằng thời gian thực hiện cùng một kịch bản trước/sau.
-- Tách tệp khỏi metadata giúp quản lý dữ liệu rõ hơn và hạn chế backend phải trung chuyển nội dung tệp.
+- Tách tệp khỏi metadata giúp quản lý dữ liệu rõ hơn; xem trước/tải xuống trực tiếp từ S3 giảm việc backend trung chuyển nội dung ở các thao tác đọc.
 - Thùng rác và audit hỗ trợ xử lý nhầm lẫn; quota giới hạn cấp phát theo tài khoản.
 - Chưa có dữ liệu vận hành để tính ROI tài chính hoặc tỷ lệ tiết kiệm. Chi phí được lập theo giả định, đối chiếu Billing khi triển khai.
 
 ### 3. Kiến trúc giải pháp
 
-![Kiến trúc CloudDocs](/images/clouddocs-architecture-proposal.png)
+![Kiến trúc CloudDocs](/images/clouddocs-architecture-current.svg)
 
 *Dịch vụ AWS sử dụng / dự kiến vận hành*
 
@@ -44,7 +44,7 @@ CloudDocs tổ chức tài liệu theo metadata và phòng ban, hỗ trợ tìm 
 | --- | --- | --- |
 | Compute | Amazon EC2, Nginx | Môi trường máy chủ ứng dụng; đã kết nối được EC2 |
 | Database | Amazon RDS for MySQL | Metadata, users, quyền và audit; đã kết nối được RDS MySQL |
-| Storage | Amazon S3 | Bucket private, signed PUT/GET, xác nhận object; đã tích hợp trong mã |
+| Storage | Amazon S3 | Bucket private; backend upload/xác nhận object, presigned GET để xem/tải; đã tích hợp trong mã |
 | Identity | Amazon Cognito User Pool | Đăng nhập PKCE, phát hành access token; đã tích hợp trong mã |
 | Security/network | IAM Role, VPC, Security Group | Quyền tài nguyên và giới hạn kết nối; cấu hình theo môi trường |
 | Operations | CloudWatch, Budgets | Giám sát tài nguyên, thu thập log và theo dõi ngân sách |
@@ -53,10 +53,19 @@ CloudDocs tổ chức tài liệu theo metadata và phòng ban, hỗ trợ tìm 
 
 - **Frontend:** giao diện tĩnh; Cognito public app client không chứa client secret. Đổi callback, logout và API_BASE theo môi trường.
 - **Backend:** xác thực JWT, đọc role/status từ MySQL, kiểm tra owner_id và quyền tài liệu, quản lý trạng thái upload và quota.
-- **RDS/MySQL:** lưu users, documents, permissions, favorites, notifications, audit và work_tasks theo schema phiên bản hiện tại.
-- **S3:** object key UUID; tên gốc lưu trong metadata. Luồng metadata → signed PUT → PUT S3 → upload-complete/HEAD; signed GET cấp sau kiểm tra quyền.
-- **Cognito:** liên kết issuer/sub, không dùng email để xác định tài khoản; hệ thống phân biệt vai trò ADMIN/USER với quyền tài liệu OWNER/VIEW/DOWNLOAD/EDIT.
+- **RDS/MySQL:** lưu users, documents, permissions, favorites, notifications, audit, work_tasks, phòng ban, avatar và document_folders theo schema phiên bản hiện tại.
+- **S3:** object key riêng cho từng lần thử upload, tên gốc lưu trong metadata. Luồng multipart → backend kiểm tra quyền/quota → upload và xác nhận S3 → commit metadata; presigned GET cấp sau kiểm tra quyền. `requestId` theo tài khoản hỗ trợ thử lại sau mất phản hồi mà không tạo tài liệu trùng khi lần trước đã thành công. Nếu giao dịch thất bại, ứng dụng rollback dữ liệu và thử dọn object; S3/MySQL không có giao dịch phân tán nên vẫn cần theo dõi object sót qua log.
+- **Cognito:** liên kết issuer/sub, không dùng email để xác định tài khoản; hệ thống phân biệt vai trò ADMIN/MANAGER/USER với quyền chủ sở hữu và các mức chia sẻ VIEW/DOWNLOAD/EDIT.
 - **Luồng local cũ:** endpoint local file còn giữ để tương thích; giao diện hiện hành dùng S3, không kết luận mọi tệp lịch sử đã được chuyển lên S3.
+
+| Phạm vi nghiệp vụ | USER | MANAGER | ADMIN |
+| --- | --- | --- | --- |
+| Tài liệu | Sở hữu hoặc được chia sẻ | Như USER; thêm quyền xem tài liệu của chủ sở hữu cùng phòng ban | Toàn hệ thống |
+| Giao việc | Thực hiện việc được giao | Giao cho USER hoạt động cùng phòng ban | Giao cho USER/MANAGER hoạt động |
+| Duyệt báo cáo | Không | Công việc do mình giao | Công việc do mình giao |
+| Quản lý tài khoản, vai trò, phòng ban | Không | Không | Có |
+
+Quyền xem theo phòng ban của MANAGER không tự cấp quyền tải xuống, sửa, chia sẻ hoặc xóa. Thư mục thuộc từng tài khoản; di chuyển tệp giữ nguyên S3 key, quyền chia sẻ và yêu thích. Ghi đè nội dung giữ ID tài liệu và các quan hệ hiện có; tài liệu báo cáo được bảo vệ theo trạng thái công việc.
 
 ### 4. Triển khai kỹ thuật
 
@@ -66,7 +75,7 @@ CloudDocs tổ chức tài liệu theo metadata và phòng ban, hỗ trợ tìm 
 2. Xây dựng ERD, backend/frontend và API metadata; quản lý mã nguồn Git.
 3. Tích hợp S3 private, CORS, presigned URL, chia sẻ và audit; chuẩn bị test case.
 4. Chuẩn bị EC2/RDS, IAM Role, cấu hình Nginx và biến môi trường.
-5. Ghép Cognito và kiểm thử tích hợp theo tiến độ thực tế; hoàn thiện quota, thùng rác và luồng công việc ở giai đoạn tiếp theo.
+5. Ghép Cognito và kiểm thử tích hợp; mở rộng quota, thùng rác, công việc, vai trò MANAGER, phòng ban và thư mục. Các chức năng này đã có trong bản mã hiện tại; kết quả có minh chứng và phần cần kiểm chứng thêm được tổng hợp tại mục 4.8.
 
 *Yêu cầu kỹ thuật*
 
@@ -77,20 +86,20 @@ CloudDocs tổ chức tài liệu theo metadata và phòng ban, hỗ trợ tìm 
 
 ### 5. Lộ trình & Mốc triển khai
 
-| Tuần | Thời gian | Nội dung học tập | Trọng tâm |
+| Tuần | Thời gian | Nội dung | Kết quả đạt được |
 | --- | --- | --- | --- |
-| 1 | 10/08/2026–14/08/2026 | Tìm hiểu đơn vị thực tập và làm quen với AWS | Nắm định hướng học tập, cách sử dụng tài liệu và ghi nhật ký thực tập. |
-| 2 | 17/08/2026–21/08/2026 | Tìm hiểu AWS IAM và quản lý quyền truy cập | Phân biệt IAM User, Group, Policy và Role. |
-| 3 | 24/08/2026–28/08/2026 | Tìm hiểu Amazon VPC và các thành phần mạng | Hiểu quan hệ giữa VPC, CIDR, subnet và Availability Zone. |
-| 4 | 31/08/2026–04/09/2026 | Tìm hiểu Amazon EC2 và so sánh với Amazon Lightsail | Hiểu AMI, instance type, EBS và các cách kết nối EC2. |
-| 5 | 07/09/2026–11/09/2026 | Tìm hiểu Amazon S3 và các hình thức lưu trữ trên AWS | Hiểu bucket, object, key và lựa chọn hình thức lưu trữ. |
-| 6 | 14/09/2026–18/09/2026 | Tìm hiểu Amazon RDS và so sánh với Amazon DynamoDB | Hiểu kết nối RDS, bảo vệ truy cập và các khái niệm sao lưu cơ bản. |
-| 7 | 21/09/2026–25/09/2026 | Tìm hiểu AWS CLI, AWS CloudShell và sử dụng IAM Role | Hiểu vai trò AWS CLI, profile, Region và môi trường AWS CloudShell. |
-| 8 | 28/09/2026–02/10/2026 | Tìm hiểu Amazon Cognito, xác thực người dùng và kiểm soát truy cập bằng token | Hiểu User Pool, App Client và luồng Authorization Code với PKCE. |
-| 9 | 05/10/2026–09/10/2026 | Tìm hiểu Amazon CloudWatch và giám sát hệ thống | Phân biệt metric, log, dashboard và alarm. |
-| 10 | 12/10/2026–16/10/2026 | Tìm hiểu AWS Lambda và quản lý tài nguyên bằng AWS Systems Manager | Hiểu function, trigger, execution role và giới hạn thực thi của Lambda. |
-| 11 | 19/10/2026–23/10/2026 | Tìm hiểu Elastic Load Balancing, EC2 Auto Scaling và triển khai ứng dụng trên nhiều Availability Zone | Phân biệt cân bằng tải, mở rộng tài nguyên và tính sẵn sàng. |
-| 12 | 26/10/2026–30/10/2026 | Tổng hợp kiến thức, liên hệ với dự án CloudDocs và hoàn thiện báo cáo thực tập | Giải thích được vai trò và mối liên hệ giữa các thành phần chính của CloudDocs. |
+| 1 | 10/08/2026–14/08/2026 | Tài khoản AWS, Budgets và Support | Đã hiểu các bước làm quen và bảo vệ tài khoản AWS. |
+| 2 | 17/08/2026–21/08/2026 | AWS IAM và quản lý quyền truy cập | Đã phân biệt được User, Group, Policy và Role. |
+| 3 | 24/08/2026–28/08/2026 | Amazon VPC và các thành phần mạng | Đã nắm được các thành phần cơ bản của VPC. |
+| 4 | 31/08/2026–04/09/2026 | Amazon EC2 và máy chủ ảo | Đã hiểu quy trình khởi tạo và kết nối EC2. |
+| 5 | 07/09/2026–11/09/2026 | Quản lý EC2, EBS và Snapshot | Đã phân biệt được vòng đời Instance, EBS Volume, Snapshot và AMI. |
+| 6 | 14/09/2026–18/09/2026 | Amazon S3 và AWS CLI | Đã nắm mô hình Bucket/Object và vai trò AWS CLI. |
+| 7 | 21/09/2026–25/09/2026 | Bảo mật S3, CORS và Presigned URL | Đã giải thích được cách bảo vệ bucket và sử dụng Presigned URL. |
+| 8 | 28/09/2026–02/10/2026 | Amazon RDS và cơ sở dữ liệu MySQL | Đã nắm thành phần của RDS MySQL và vai trò từng thông số kết nối. |
+| 9 | 05/10/2026–09/10/2026 | Sao lưu và bảo mật Amazon RDS | Đã giải thích được Backup, Snapshot, Restore và mục đích Multi-AZ. |
+| 10 | 12/10/2026–16/10/2026 | Amazon Cognito và quản lý người dùng | Đã nắm vai trò User Pool, App Client và cấu hình đăng nhập. |
+| 11 | 19/10/2026–23/10/2026 | Luồng xác thực Cognito và JWT | Đã giải thích được luồng xác thực Cognito và vai trò các loại token. |
+| 12 | 26/10/2026–30/10/2026 | Mối liên hệ giữa các dịch vụ AWS | Đã mô tả được kiến trúc ứng dụng sử dụng các dịch vụ AWS đã học. |
 
 ### 6. Ước tính ngân sách
 
@@ -137,10 +146,11 @@ Giữ bản build trước, bản sao DB và cấu hình môi trường có ki�
 
 *Cải tiến kỹ thuật*
 
-- Trình diễn được đăng nhập, upload, preview/download, chia sẻ/thu hồi và audit với hai vai trò.
+- Trình diễn được đăng nhập, upload, preview/download, chia sẻ/thu hồi và audit; kiểm tra phạm vi ADMIN/MANAGER/USER.
 - Đối chiếu được quota, thùng rác, khôi phục và xóa vĩnh viễn với metadata/S3.
 - Trình diễn công việc, nộp báo cáo, chờ duyệt, yêu cầu sửa và nộp muộn ở phiên bản mở rộng.
 - Có tài liệu triển khai, cấu hình môi trường và kịch bản kiểm thử theo đúng mã nguồn.
+- Đối chiếu thư mục, quản lý phòng ban, Đã chia sẻ và ghi đè nội dung với ma trận quyền; phân biệt chức năng đã có trong mã với kết quả đã kiểm chứng thực tế.
 
 *Giá trị dài hạn*
 

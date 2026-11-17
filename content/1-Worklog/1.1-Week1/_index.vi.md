@@ -1,6 +1,6 @@
 ---
-title: "Tuần 1: Tìm hiểu đơn vị thực tập và làm quen với AWS"
-menuTitle: "Nhật ký tuần 1"
+title: "Worklog tuần 1"
+menuTitle: "Worklog tuần 1"
 date: 2026-11-11
 weight: 1
 chapter: false

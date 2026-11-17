@@ -1,6 +1,6 @@
 ---
-title: "Tuần 11: Tìm hiểu Elastic Load Balancing, EC2 Auto Scaling và triển khai ứng dụng trên nhiều Availability Zone"
-menuTitle: "Nhật ký tuần 11"
+title: "Worklog tuần 11"
+menuTitle: "Worklog tuần 11"
 date: 2026-11-11
 weight: 11
 chapter: false
